@@ -16,6 +16,7 @@
   "main": "index.js",
   "bin": "bin/cli.sh",
   "scripts": {
+    "prerelease": "git checkout master",
     "release": "standard-version",
     "postrelease": "git push --follow-tags origin master && npm publish --access public"
   },
