@@ -20,6 +20,7 @@
   },
   "dependencies": {
     "jsonc": "2.0.0",
-    "replace-in-file": "6.3.2"
+    "replace-in-file": "6.3.2",
+    "sort-object-keys": "1.1.3"
   }
 }
