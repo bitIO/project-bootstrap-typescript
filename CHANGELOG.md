@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.4](https://github.com-bitio/bitIO/create-typescript-project/compare/v1.0.3...v1.0.4) (2022-02-16)
+
+
+### Bug Fixes
+
+* **bin:** read project name first ([c2e2f18](https://github.com-bitio/bitIO/create-typescript-project/commit/c2e2f186c65bf99dd717352b14f373c1f5b4638c))
+
 ### [1.0.3](https://github.com-bitio/bitIO/create-typescript-project/compare/v1.0.2...v1.0.3) (2022-02-16)
 
 

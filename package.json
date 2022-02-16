@@ -1,6 +1,6 @@
 {
   "name": "@fcallem/create-typescript-project",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Personal setup of typescript projects using typescript, jest, eslint, commitlint and husky",
   "keywords": [
     "commitlint",
