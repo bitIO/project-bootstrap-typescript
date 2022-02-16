@@ -26,6 +26,7 @@
       { "newlines-between": "always", "alphabetize": { "order": "asc" } }
     ],
     "import/exports-last": ["error"],
+    "newline-before-return": "error",
     "sort-keys": [
       "error",
       "asc",
