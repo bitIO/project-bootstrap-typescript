@@ -55,6 +55,7 @@ json.devDependencies["jest"] = "27.5.1";
 json.devDependencies["@types/jest"] = "27.4.0";
 json.devDependencies["ts-jest"] = "27.1.3";
 json.devDependencies["jest-html-reporters"] = "3.0.5";
+json.devDependencies["lint-staged"] = "12.3.4";
 
 json.devDependencies = sortObject(json.devDependencies);
 
