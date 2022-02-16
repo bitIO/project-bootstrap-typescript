@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.3](https://github.com-bitio/bitIO/create-typescript-project/compare/v1.0.2...v1.0.3) (2022-02-16)
+
+
+### Bug Fixes
+
+* add missing rc files ([9637426](https://github.com-bitio/bitIO/create-typescript-project/commit/963742600c6fdd6f66a37fed1bfa9456b8a271b2))
+* install local dependencies ([cbbae04](https://github.com-bitio/bitIO/create-typescript-project/commit/cbbae049d19ab74698481325a9ecfa95f76e53f7))
+* move gitignore to its own folder ([0b9c588](https://github.com-bitio/bitIO/create-typescript-project/commit/0b9c58853a999601a55fb79202f81904f39ad1b3))
+
 ### 1.0.2 (2022-02-16)
 
 
