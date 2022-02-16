@@ -33,7 +33,7 @@ await $`rm -f ${projectPath}/package.json-* `;
 // SETUP: gitignore
 // -----------------------------------------------------------------------------
 await $`rm -f ./.gitignore`;
-await $`cp ${sourcesPath}/assets/.gitignore .`;
+await $`cp ${sourcesPath}/assets/git/.gitignore .`;
 
 // SETUP: eslint
 // -----------------------------------------------------------------------------
