@@ -67,4 +67,8 @@ await $`yarn install --silent --no-lockfile`;
 // -----------------------------------------------------------------------------
 await $`npx husky install`;
 await $`cp ${sourcesPath}/assets/husky/* .husky/`;
-await $`chmod +x .husky/commit-msg .husky/pre-commit`
+await $`chmod +x .husky/commit-msg .husky/pre-commit`;
+
+// SETUP: vscode
+// -----------------------------------------------------------------------------
+await $`node ${sourcesPath}/src/vscode.js ${projectPath}`;
