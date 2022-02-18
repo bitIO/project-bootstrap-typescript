@@ -10,7 +10,7 @@ json.dependencies = {};
 json.engines.node = ">=14";
 json.scripts["prepare-release"] = "run-s reset-hard test version doc:html";
 
-// COMMITLINT
+// COMMIT LINT
 // -----------------------------------------------------------------------------
 delete json.config;
 delete json.devDependencies["cz-conventional-changelog"];
@@ -40,10 +40,19 @@ delete json.devDependencies["@istanbuljs/nyc-config-typescript"];
 delete json.devDependencies["ava"];
 delete json.devDependencies["codecov"];
 delete json.devDependencies["nyc"];
+json.devDependencies["@types/jest"] = "27.4.0";
+json.devDependencies["eslint-plugin-jest"] = "26.1.1";
+json.devDependencies["jest-config"] = "26.6.3";
+json.devDependencies["jest-html-reporters"] = "2.1.6";
+json.devDependencies["jest-junit"] = "12.2.0";
+json.devDependencies["jest"] = "27.5.1";
+json.devDependencies["ts-jest"] = "26.5.4";
+json.devDependencies["ts-jest"] = "27.1.3";
 
 // PRETTIER
 // -----------------------------------------------------------------------------
 delete json.prettier;
+json.devDependencies["prettier"] = "2.5.1";
 
 // DEV DEPENDENCIES
 // -----------------------------------------------------------------------------
@@ -51,12 +60,9 @@ json.devDependencies["@types/node"] = "17.0.18";
 json.devDependencies["husky"] = "7.0.4";
 json.devDependencies["@commitlint/cli"] = "16.2.1";
 json.devDependencies["@commitlint/config-conventional"] = "16.2.1";
-json.devDependencies["jest"] = "27.5.1";
-json.devDependencies["@types/jest"] = "27.4.0";
-json.devDependencies["ts-jest"] = "27.1.3";
 json.devDependencies["jest-html-reporters"] = "3.0.5";
 json.devDependencies["lint-staged"] = "12.3.4";
-
+json.devDependencies["eslint-plugin-unused-imports"] = "2.0.0";
 json.devDependencies = sortObject(json.devDependencies);
 
 saveJSON(packageFilePath, json);
