@@ -52,8 +52,8 @@ await $`cp ${sourcesPath}/assets/lint-staged.config.js .`;
 // SETUP: jest
 // -----------------------------------------------------------------------------
 await $`cp ${sourcesPath}/assets/jest/* .`;
-await $`sed -i -e 's/"types": \\["node"],/"types": \\["node","jest"],/g' ${projectPath}/tsconfig.json `;
-await $`sed -i -e 's/"types": \\[],/"types": \\["node","jest"],/g' ${projectPath}/tsconfig.json `;
+await $`sed -i -e 's/"types": \\[.*"node".*],/"types": \\["node","jest"],/g' ${projectPath}/tsconfig.json `;
+await $`sed -i -e 's/"types": \\[.*],/"types": \\["node","jest"],/g' ${projectPath}/tsconfig.json `;
 await $`rm -f ${projectPath}/tsconfig.json-* `;
 
 // SETUP:update dependencies
