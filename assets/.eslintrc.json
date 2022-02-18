@@ -4,16 +4,24 @@
   "parserOptions": { "project": "./tsconfig.json" },
   "env": { "es6": true },
   "ignorePatterns": ["node_modules", "build", "coverage"],
-  "plugins": ["import", "eslint-comments", "functional"],
+  "plugins": [
+    "unused-imports",
+    "import",
+    "eslint-comments",
+    "functional",
+    "jest"
+  ],
   "extends": [
     "eslint:recommended",
     "plugin:eslint-comments/recommended",
     "plugin:@typescript-eslint/recommended",
+    "plugin:import/recommended",
     "plugin:import/typescript",
     "plugin:functional/lite",
-    "prettier"
+    "prettier",
+    "plugin:jest/recommended"
   ],
-  "globals": {},
+  "globals": { "console": true, "jest/globals": true },
   "rules": {
     "@typescript-eslint/explicit-module-boundary-types": "off",
     "eslint-comments/disable-enable-pair": [
@@ -27,6 +35,7 @@
     ],
     "import/exports-last": ["error"],
     "newline-before-return": "error",
+    "no-unused-vars": "off",
     "sort-keys": [
       "error",
       "asc",
@@ -35,6 +44,16 @@
     "sort-imports": [
       "error",
       { "ignoreDeclarationSort": true, "ignoreCase": true }
+    ],
+    "unused-imports/no-unused-imports": "error",
+    "unused-imports/no-unused-vars": [
+      "error",
+      {
+        "vars": "all",
+        "varsIgnorePattern": "^_",
+        "args": "after-used",
+        "argsIgnorePattern": "^_"
+      }
     ]
   }
 }
